@@ -2,7 +2,13 @@
 
 # SPEC-debris-barrier script
 
-use the python file to run SPEC-debris-barrier 
+use the python file to run:
+
+	SPEC-debris model
+	
+	optimal closed and open-type barrier location selection model 
+		
+	closed and open-type barrier performance evaluation
 
 to request for a software GUI version (like shown in GUI figure), please send a request through e-mail:
 	
