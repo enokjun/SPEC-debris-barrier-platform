@@ -10,7 +10,8 @@ use the python file to run:
 		
 	closed and open-type barrier performance evaluation
 
-to request for a software GUI version (like shown in GUI figure), please send a request through e-mail:
+to request for a software GUI version (refer to SPEC_debris_barrier_platform_GUI.png) and/or user manual (written in PhD Thesis by Enok Cheon),
+please send a request through e-mail:
 	
 	enokjun@gmail.com
 	
