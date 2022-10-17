@@ -4,7 +4,7 @@
 
 use the python file to run SPEC-debris-barrier 
 
-to request for a software GUI version, please send a request through e-mail:
+to request for a software GUI version (like shown in GUI figure), please send a request through e-mail:
 	
 	enokjun@gmail.com
 	
