@@ -29,7 +29,9 @@ https://www.python.org/
 Refer to the PhD Thesis "A New Simulation Model for Optimal Location Selection and Performance Evaluation of Barriers as Mitigation Against Debris Flow" by Enok Cheon (2022) as the User manual
 
 ch 2 and 3 - Theory 
+
 ch 4 - Software GUI, features, and instructions
+
 Appendix A - Instruction for creating the input JSON file
 
 # Reference
