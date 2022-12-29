@@ -4144,9 +4144,9 @@ def time0_setup_t_v12_0(source_file_name, flowpath_file_name, part_num_per_cell,
 			cluster_group = Cluster(cID, cID_part_i, None)
 
 			# compute cluster centroid coordinates - xyz
-			# start_cent_xy = cluster_group.compute_centroid()
+			start_cent_xy = cluster_group.compute_centroid()
 			# start_cent_xy = cluster_group.compute_median_centroid()
-			start_cent_xy = cluster_group.compute_max_pressure_centroid()
+			# start_cent_xy = cluster_group.compute_max_pressure_centroid()
 
 			local_xy_start, local_z_start = local_cell_v3_0(cell_size, start_cent_xy[0], start_cent_xy[1], DEM, gridUniqueX, gridUniqueY, deltaX, deltaY, None)
 			start_cent_z = compute_Z_v3_0(start_cent_xy, local_xy_start, local_z_start, interp_method)
@@ -13260,9 +13260,9 @@ def SPEC_debris_c_t_nb_MP_v9_0(DEM, ERODE, MAT, gridUniqueX, gridUniqueY, deltaX
 					next_cluster.update_time(d_time=t_step)
 
 					# compute cluster centroid (row,col) and (x,y)
-					# new_xc, new_yc = next_cluster.compute_centroid()
+					new_xc, new_yc = next_cluster.compute_centroid()
 					# new_xc, new_yc = next_cluster.compute_median_centroid()
-					new_xc, new_yc = next_cluster.compute_max_pressure_centroid()
+					# new_xc, new_yc = next_cluster.compute_max_pressure_centroid()
 
 					# compute elevation - Z
 					local_xy_cluster, local_z_cluster = local_cell_v3_0(max(cell_size), new_xc, new_yc, DEM, gridUniqueX, gridUniqueY, deltaX, deltaY, None)
@@ -13392,9 +13392,9 @@ def SPEC_debris_c_t_nb_MP_v9_0(DEM, ERODE, MAT, gridUniqueX, gridUniqueY, deltaX
 							combined_cluster.update_time(d_time=t_step)
 
 							# compute cluster centroid (row,col) and (x,y)
-							# combined_xc, combined_yc = combined_cluster.compute_centroid()
+							combined_xc, combined_yc = combined_cluster.compute_centroid()
 							# combined_xc, combined_yc = combined_cluster.compute_median_centroid()
-							combined_xc, combined_yc = combined_cluster.compute_max_pressure_centroid()
+							# combined_xc, combined_yc = combined_cluster.compute_max_pressure_centroid()
 
 							# compute elevation - Z
 							local_xy_cluster, local_z_cluster = local_cell_v3_0(max(cell_size), combined_xc, combined_yc, DEM, gridUniqueX, gridUniqueY, deltaX, deltaY, None)
