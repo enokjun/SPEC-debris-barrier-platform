@@ -2,7 +2,7 @@
 
 # SPEC-debris-barrier script
 
-use the python file to run:
+use the python file (SPEC_debris_barrier_platform_v8_10.py) to run:
 
 	SPEC-debris model
 	
