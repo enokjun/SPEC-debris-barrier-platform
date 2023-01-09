@@ -47,7 +47,7 @@ https://www.python.org/
 	
 	scikit-learn
 	
-	fcl
+	python-fcl
 	
 	tripy
 
