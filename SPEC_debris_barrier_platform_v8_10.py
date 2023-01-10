@@ -19634,41 +19634,11 @@ def SPEC_debris_barrier_platform_v8_00(json_file_name):
 ## debugging 
 #################################################################################################################
 # if __name__ == '__main__':
-# 	## for i9 computer
-# 	lll = [
-# 		# 'MtU_R_SPECDBv750_BD_input_v300.json'
-# 		# 'MtU_S_SPECDBv750_closed_input_v150.json'
-# 		# 'Slit_no_barrier_SPECDBv750_v250.json'
-# 		# 'Slit_ref_SPECDBv750_v250.json',
-# 		# 'Slit_P00_SPECDBv750_v250.json',
-# 		# 'Slit_P45_SPECDBv750_v250.json',
-# 		# 'Slit_V45_SPECDBv750_v250.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_30_v100.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_30_v110.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_30_v111.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_30_v112.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_30_v114.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_50_v120.json'
-# 		# 'Slit_SPECDBv800_COR_p2p_70_p2w_50_v121.json'
-# 		# 'Slit_SPECDBv800_V45_v100.json'
-# 		# 'Slit_SPECDBv800_V45_v101.json'
-# 		# 'Slit_SPECDBv800_P00_v100.json'
-# 		# 'Slit_SPECDBv800_P00_v101.json'
-# 		'Slit_SPECDBv800_P00_v102.json'
-# 	]
-
 # 	## for W16 computer
-# 	# lll = [
-# 	# 	# 'MtU_R_SPECDBv750_closed_input_v200.json'
-# 	# 	# 'MtU_R_SPECDBv800_BD_input_v300.json',
-# 	# 	# 'MtU_S_SPECDBv800_BD_input_v300.json'
-# 	# 	# # 'MtU_S_SPECDBv750_closed_input_v200.json'
-# 	# 	# 'Slit_no_barrier_SPECDBv750_v200.json'
-# 	# 	# 'MtU_R_SPECDBv800_opt_wall_input_v300.json'
-# 	# 	'MtU_R_SPECDBv800_closed_case2_v100_input.json',
-# 	# 	'MtU_R_SPECDBv800_closed_case3_v100_input.json'
-# 	# ]
-	
+# 	lll = [
+#		sample_input_JSON.json
+# 	]
+# 	
 # 	for input_file in lll:
 # 		return_check = check_json_input_v8_00(input_file)
 # 		if return_check != 0:
