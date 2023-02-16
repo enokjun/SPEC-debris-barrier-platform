@@ -17,6 +17,9 @@ please send a request through e-mail:
 	
 	enokjun@kaist.ac.kr
 
+Please note that sometimes a mistake is found afterwards in SPEC_debris_barrier_platform_v8_10.py;
+therefore, try using the version in GitHub instead of version installed in GUI if numerical or computational errors.
+
 # Installation Setup
 
 1) After installing the exe file, the user must install have installed Python3.
