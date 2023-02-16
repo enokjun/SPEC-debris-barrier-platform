@@ -1699,8 +1699,8 @@ def generate_wall_dict_v1_00(wall_info):
 				type_wall_seg_id = int(40_000 + wall_group_id*100 + (len(temp_list[1]) + 1) + wall_seg_n)
 
 				# leftmost-downmost cornder XY coordinates
-				center_x = (spacing + 2*radius)*np.cos(oriP_rad) + starting_center_X
-				center_y = (spacing + 2*radius)*np.sin(oriP_rad) + starting_center_Y
+				center_x = wall_seg_n*(spacing + 2*radius)*np.cos(oriP_rad) + starting_center_X
+				center_y = wall_seg_n*(spacing + 2*radius)*np.sin(oriP_rad) + starting_center_Y
 
 				# cylinder shapely polygon
 				cylinder_polygon = Point(center_x, center_y).buffer(radius) 
