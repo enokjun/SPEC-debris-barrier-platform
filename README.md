@@ -30,8 +30,6 @@ https://www.python.org/
 	
 numpy, pandas, laspy, scipy, pykrige, plotly, shapely, matplotlib, alphashape, trimesh, scikit-learn, python-fcl, tripy
 These python libraris can be installed by typing the following on the command prompt (or terminal)
-
-	python -m pip install pip --upgrade
 	
 	python -m pip install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
 
