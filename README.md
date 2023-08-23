@@ -29,8 +29,22 @@ therefore, try using the version in GitHub instead of the version installed in G
 numpy, pandas, laspy, scipy, pykrige, plotly, shapely, matplotlib, alphashape, trimesh, scikit-learn, python-fcl, tripy
 
 These python libraris can be installed by typing the following on the command prompt (or terminal)
+
+For windows command prompt:
 	
 	python -m pip install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
+
+For MacOS terminal:
+
+ 	python3 -m ensurepip
+  
+	python3 -m pip3 install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
+
+For Linux terminal:
+	
+	sudo apt-get install python3-pip python-dev
+ 
+	pip3 install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
 
 4) The following 3rd party software are not required but would be helpful:
 	
