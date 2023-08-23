@@ -4,11 +4,11 @@
 
 use the python file (SPEC_debris_barrier_platform_v8_10.py) to run:
 
-	SPEC-debris model
+1) SPEC-debris model
 	
-	optimal closed and open-type barrier location selection model 
+2) optimal closed and open-type barrier location selection model 
 		
-	closed and open-type barrier performance evaluation
+3) closed and open-type barrier performance evaluation
 
 to request for a software GUI version (refer to SPEC_debris_barrier_platform_GUI.png) and/or user manual (written in PhD Thesis by Enok Cheon),
 please send a request through e-mail:
