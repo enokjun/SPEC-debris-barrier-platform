@@ -66,9 +66,9 @@ To run the sample case provided in the Github, please follow these instructions 
 
 1) Download the code into the computer
 
-2) Open the 'SPEC_debris_barrier_platform_v8_11.py' and 'sample_input_JSON.json' on the program code editor (e.g. VS code) 
+2) Open the 'SPEC_debris_barrier_platform_v8_11.py', 'sample_input_JSON.json', and 'sample_input_wall_JSON.json' on the program code editor (e.g. VS code) 
 
-3) On the 'sample_input_JSON.json' file, go to line 5 with heading "folder path". Replace the '...' to the full folder path location where the 'sample_case' folder is located
+3) On the 'sample_input_JSON.json' and 'sample_input_wall_JSON.json' files, go to line 5 with heading "folder path" and replace the '...' to the full folder path location where the 'sample_case' and 'sample_case_barrier' folder is located, respectively.
 
 4) On the 'SPEC_debris_barrier_platform_v8_11.py' file, go to line 19817 where the list named "input_JSON_file_names" is located. Make sure the name of the input JSON files are listed between the square brackets. The name of the input JSON files should be between quatation marks, i.e., string format. 
 
