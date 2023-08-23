@@ -54,11 +54,17 @@ https://www.python.org/
 	
 	tripy
 
+	These python libraris can be installed by typing the following on the command prompt (or terminal)
+
+	python -m pip install pip --upgrade
+	python -m pip install numpy	pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
+
+
 3) The following 3rd party softwares are not required, but would be helpful:
 	
-	program code editor (e.g. VS code)
+	program code editor (e.g. VS code) with python extension installed
 	
-	chrome internet browser
+	internet browser (chrome or edge)
 
 # Tip
 
@@ -79,3 +85,37 @@ Cheon, E 2022, ‘A New Simulation Model for Optimal Location Selection and Perf
 
 {APA}
 Cheon, E. (2022). A New Simulation Model for Optimal Location Selection and Performance Evaluation of Barriers as Mitigation Against Debris Flow (Doctoral thesis), Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea.
+
+
+# Example
+
+To run the sample case provided in the Github, please follow these instructions after installation is completed
+
+1) Download the code into the computer
+
+2) Open the 'SPEC_debris_barrier_platform_v8_11.py' and 'sample_input_JSON.json' on the program code editor (e.g. VS code) 
+
+3) On the 'sample_input_JSON.json' file, go to line 5 with heading "folder path". Replace the '...' to the full folder path location where the 'sample_case' folder is located
+
+4) On the 'SPEC_debris_barrier_platform_v8_11.py' file, go to line 19817 where the list named "input_JSON_file_names" is located. Make sure the name of the input JSON files are listed between the square brackets. The name of the input JSON files should be between quatation marks, i.e., string format. 
+
+5) Run the python file to start the simulation. Use one of these methods:
+
+1st method - VS code
+
+	a) open to the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code
+
+	b) press F5 button
+
+2nd method - terminal/cmd
+
+	a) open command prompt or terminal
+
+	b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_11.py' file is located
+
+	c) type the following code and press enter key:
+
+		python SPEC_debris_barrier_platform_v8_11.py
+
+6) All the simulation files are stored in the folder specified in step 3
+
