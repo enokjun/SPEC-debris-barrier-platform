@@ -32,33 +32,27 @@ These python libraris can be installed by typing the following on the command pr
 	
 	python -m pip install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
 
-4) The following 3rd party softwares are not required, but would be helpful:
+4) The following 3rd party software are not required but would be helpful:
 	
-	program code editor (e.g. VS code) with python extension installed
+	program code editor (e.g. VS code) with Python extension installed
 	
 	internet browser (chrome or edge)
 
-# Testing for checking correct installation
-
-Two simple cases are tested to ensure the installation was successful:
-
-A) 'sample_input_JSON.json' shows an example of debris-flow analysis (SPEC-debris), clustering analysis, and optimization closed-type barrier selection method
-
-B) 'sample_input_wall_JSON.json' shows an example of debris-flow interaction with a rigid closed-type barrier (SPEC-debris)
+# Testing to check whether correctly installed
 
 To run the sample case provided in the Github, please follow these instructions after installation is completed
 
 1) Download all the codes in the GitHub into the computer
 
-2) Open the 'sample_input_JSON.json' and 'sample_input_wall_JSON.json' on the program code editor (e.g. VS code) 
+2) Open the 'sample_input_JSON.json' on the program code editor (e.g. VS code) 
 
-3) On the 'sample_input_JSON.json' and 'sample_input_wall_JSON.json' files, go to line 5 with the heading "folder path" and replace the '...' to the full folder path location where the 'sample_case' and 'sample_case_barrier' folder is located, respectively. THe name of the folder path should always be between double quotation mark ("  ")
+3) On the 'sample_input_JSON.json' files, go to line 5 with the heading "folder path" and replace the '...' to the full folder path location where the 'sample_case' folder is located, respectively. The name of the folder path should always be between double quotation marks ("  ")
 
 4) Run the 'SPEC_debris_barrier_platform_v8_11.py' to start both simulations. Use one of these methods:
 
 1st method - VS code or IDE
 
-a) open to the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code or IDE
+a) open the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code or IDE
 
 b) run python code
 
@@ -72,7 +66,7 @@ c) type the following code and press enter key:
 
 	python SPEC_debris_barrier_platform_v8_11.py
 
-5) All the simulation files are stored in the folder specified in Step 3 and the results will automatically open on the browsers
+5) All the simulation files are stored in the folder specified in Step 3, and the results will automatically open on the browsers
 
 
 # Reference and Guide
