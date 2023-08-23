@@ -28,39 +28,14 @@ https://www.python.org/
 
 2) The user must contain the following Python libraries, please install these libraries using the pip module:
 	
-	numpy
-	
-	pandas
-	
-	laspy
-	
-	scipy
-	
-	pykrige
-	
-	plotly
-	
-	shapely
-	
-	matplotlib
-	
-	alphashape
-	
-	trimesh
-	
-	scikit-learn
-	
-	python-fcl
-	
-	tripy
-
-	These python libraris can be installed by typing the following on the command prompt (or terminal)
+numpy, pandas, laspy, scipy, pykrige, plotly, shapely, matplotlib, alphashape, trimesh, scikit-learn, python-fcl, tripy
+These python libraris can be installed by typing the following on the command prompt (or terminal)
 
 	python -m pip install pip --upgrade
-	python -m pip install numpy	pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
+	
+	python -m pip install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
 
-
-3) The following 3rd party softwares are not required, but would be helpful:
+4) The following 3rd party softwares are not required, but would be helpful:
 	
 	program code editor (e.g. VS code) with python extension installed
 	
@@ -70,11 +45,11 @@ https://www.python.org/
 
 Refer to the PhD Thesis "A New Simulation Model for Optimal Location Selection and Performance Evaluation of Barriers as Mitigation Against Debris Flow" by Enok Cheon (2022) as the User manual
 
-	ch 2 and 3 - Theory 
+ch 2 and 3 - Theory 
 
-	ch 4 - Software GUI, features, and instructions
+ch 4 - Software GUI, features, and instructions
 
-	Appendix A - Instruction for creating the input JSON file
+Appendix A - Instruction for creating the input JSON file
 
 # Reference
 
@@ -103,19 +78,19 @@ To run the sample case provided in the Github, please follow these instructions 
 
 1st method - VS code
 
-	a) open to the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code
+a) open to the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code
 
-	b) press F5 button
+b) press F5 button
 
 2nd method - terminal/cmd
 
-	a) open command prompt or terminal
+a) open command prompt or terminal
 
-	b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_11.py' file is located
+b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_11.py' file is located
 
-	c) type the following code and press enter key:
+c) type the following code and press enter key:
 
-		python SPEC_debris_barrier_platform_v8_11.py
+	python SPEC_debris_barrier_platform_v8_11.py
 
 6) All the simulation files are stored in the folder specified in step 3
 
