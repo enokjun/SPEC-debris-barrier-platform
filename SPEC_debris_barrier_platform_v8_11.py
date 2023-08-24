@@ -16887,6 +16887,7 @@ def check_json_input_v8_00(json_file_name):
 		2: ['JSON file variable error', 'the required variable name has a typo or is unavailable'], 
 		3: ['python script file naming error', 'the naming of python file has error. Please ensure the python file name follows this format: SPEC_debris_barrier_platform_v00_00.py where 00_00 is the version number'], 
 		4: ['python script version error', 'the version number on the python script and the input json file should match'], 
+		5: ['JSON file name error', 'the input file name has error or is incorrect'], 
 		20: ['flowpath file cannot be found', 'the file does not exist or is not located in the folder'],
 		21: ['flowpath filetype error', 'must be one of csv or grd or las filetypes'],
 		30: ['source file cannot be found', 'the file does not exist or is not located in the folder'], 
@@ -17031,8 +17032,14 @@ def check_json_input_v8_00(json_file_name):
 	}
 
 	# load json file
-	with open(json_file_name) as json_file:
+	# with open(json_file_name) as json_file:
+	# 	json_opt_input_all_data = json.load(json_file)
+	
+	try:
+		json_file = open(json_file_name)
 		json_opt_input_all_data = json.load(json_file)
+	except:
+		return (0, 5, error_message_code_title_text[5][0], error_message_code_title_text[5][1])
 
 	## iterate through each json input data
 
@@ -19807,11 +19814,9 @@ def SPEC_debris_barrier_platform_v8_00(json_file_name):
 	json_file_name_temp = json_file_name[:-5] + '_overall_results.json'
 	with open(json_file_name_temp, 'w') as fp:
 		json.dump(return_outputs, fp, indent=4)
-
-	print()
 	
 	# if everything goes well - return code to signify all completed well
-	return 0    # no error occurred - code 0 
+	return return_outputs    # no error occurred - code 0 
 
 
 #################################################################################################################
