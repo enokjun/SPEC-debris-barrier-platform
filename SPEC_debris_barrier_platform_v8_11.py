@@ -4831,8 +4831,8 @@ def determine_optimal_alpha(points, max_alpha=0.5, min_alpha=0, iter_max=500, dp
 		polygon = alphashape.alphashape(points, test_alpha)
 		if isinstance(polygon, Polygon):
 			if not isinstance(points, MultiPoint):
-				points = MultiPoint(list(points))
-			alpha_check = all([polygon.intersects(point) for point in points])
+				points_multipoints = MultiPoint(list(points))
+			alpha_check = all([polygon.intersects(point_mpt) for point_mpt in points_multipoints.geoms])
 		elif isinstance(polygon, trimesh.base.Trimesh):
 			alpha_check = len(polygon.faces) > 0 and all(trimesh.proximity.signed_distance(polygon, list(points)) >= 0)
 		else:
@@ -4856,8 +4856,8 @@ def determine_optimal_alpha(points, max_alpha=0.5, min_alpha=0, iter_max=500, dp
 			polygon_min = alphashape.alphashape(points, min_alpha)
 			if isinstance(polygon_min, Polygon):
 				if not isinstance(points, MultiPoint):
-					points = MultiPoint(list(points))
-				min_alpha_check = all([polygon_min.intersects(point) for point in points])
+					points_multipoints = MultiPoint(list(points))
+				min_alpha_check = all([polygon_min.intersects(point_mpt) for point_mpt in points_multipoints.geoms])
 			elif isinstance(polygon_min, trimesh.base.Trimesh):
 				min_alpha_check = len(polygon_min.faces) > 0 and all(trimesh.proximity.signed_distance(polygon_min, list(points)) >= 0)
 			else:
