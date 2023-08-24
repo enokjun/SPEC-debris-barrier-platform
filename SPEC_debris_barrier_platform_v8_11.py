@@ -4552,7 +4552,16 @@ def determine_optimal_alpha_boundary(points, increment=0.01, max_alpha=0.5, angl
 
 	try to find the minimum alpha value that fits the following function
 	'''
+	
+	# remove repeating points
+	points = list(set(points))
 
+	## check if points would create a line or single point -> zero cluster area
+	points_array = np.array(points)
+	if len(points) <= 1 or len(np.unique(points_array[:, 0])) == 1 or len(np.unique(points_array[:,1])) == 1:
+		cent_x, cent_y = np.mean(points_array, axis=0)
+		return Point(cent_x, cent_y)
+		
 	####################################################################################################
 	### find outlier points
 	####################################################################################################
@@ -4809,6 +4818,14 @@ def determine_optimal_alpha(points, max_alpha=0.5, min_alpha=0, iter_max=500, dp
 
 	### https://alphashape.readthedocs.io/en/latest/_modules/alphashape/optimizealpha.html#optimizealpha
 	
+	# remove repeating points
+	points = list(set(points))
+
+	## check if points would create a line or single point -> optimal alpha value is zero
+	points_array = np.array(points)
+	if len(points) <= 1 or len(np.unique(points_array[:, 0])) == 1 or len(np.unique(points_array[:,1])) == 1:
+		return 0
+		
 	# find accruacy of up to certain decimal point
 	max_alpha_dt_dp = abs(decimal.Decimal(str(max_alpha)).as_tuple().exponent)
 	min_alpha_dt_dp = abs(decimal.Decimal(str(min_alpha)).as_tuple().exponent)
@@ -4892,7 +4909,16 @@ def determine_optimal_CVH_boundary(points, cluster_boundary_buffer=0, output_inl
 
 	try to find the minimum alpha value that fits the following function
 	'''
+	
+	# remove repeating points
+	points = list(set(points))
 
+	## check if points would create a line or single point -> zero cluster area
+	points_array = np.array(points)
+	if len(points) <= 1 or len(np.unique(points_array[:, 0])) == 1 or len(np.unique(points_array[:,1])) == 1:
+		cent_x, cent_y = np.mean(points_array, axis=0)
+		return Point(cent_x, cent_y)
+		
 	####################################################################################################
 	### find outlier points
 	####################################################################################################
@@ -5002,7 +5028,15 @@ def determine_optimal_CVH_boundary(points, cluster_boundary_buffer=0, output_inl
 
 # check whether two clusters merge - concave-hull and convex-hull
 def check_merge_v5_0(cluster1, cluster2, merge_overlap_ratio):
-
+	
+	if cluster1.boundary_polygon.area == 0 and cluster2.boundary_polygon.area == 0:
+		return False
+	elif ((cluster1.boundary_polygon.area == 0 and cluster2.boundary_polygon.area > 0) or (cluster1.boundary_polygon.area > 0 and cluster2.boundary_polygon.area == 0)):
+		if cluster1.boundary_polygon.intersects(cluster2.boundary_polygon):
+			return True
+		else:
+			return False
+			
 	# extract boudnary shapely polygon
 	poly_cluster1 = cluster1.boundary_polygon
 	poly_cluster2 = cluster2.boundary_polygon
