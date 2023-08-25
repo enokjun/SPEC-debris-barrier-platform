@@ -1,0 +1,128 @@
+{
+	"SPEC-debris": [ 
+	{
+		"project name": "sample_SPEC_debris_barrier_platform_analysis", 
+		"folder path": "./sample_case_barrier/",
+		"flowpath file name": "sample_flowpath.csv", 
+		"source file name": "sample_source.csv",
+		"material file name": null,
+		"grid x array": null,
+		"grid y array": null,
+		"grid delta_x": null,
+        "grid delta_y": null,
+        "flowpath z array": null,
+		"material id array": null,
+		"road xy": [[0, 72.5], [100, 72.5]],
+		"wall info": {
+			"1": {
+				"wall type": "P",
+				"slit ratio": 0,
+				"number of wall segments": 1,
+				"orientation of wall segments (Polar)": 0.0,
+				"orientation of wall overall (Polar)": 0.0,
+				"wall thickness": 1.0,
+				"wall length": 15.0,
+				"wall elevation option": 1,
+				"elevation or height": 81.02,
+				"wall centroid X": 50.0,
+				"wall centroid Y": 50.0
+			}
+		},
+		"time step interval": 0.5,
+		"maximum simulation time": 20.0, 
+		"particle number per cell": 4,
+		"initial u_x": null, 
+		"initial u_y": null, 
+		"material": { 
+			"1": {
+				"f": [0.1237, 0.0055], 
+				"phi": 22.4,
+				"Es": 0.003,
+				"density": 1885.8,
+				"max erode depth": 4.0
+			}
+		},
+		"initial SPH": true,
+		"overall_fb_0": null,
+		"gravitational acceleration": 9.81,
+		"coefficient of restitution (COR)":{
+			"particle with particle": 0.7,
+			"particle with wall": 0.6
+		},
+		"interpolation method": "linear", 
+		"entrainment model": "Hungr", 
+		"cluster boundary method": "ConvexHull", 
+		"free fall angle variation": 5,
+		"local cell sizes": [5, 1], 
+		"l_dp_min": 4,
+		"concave hull algorithm parameter": {
+			"max iteration": 10, 
+			"max alpha": 0.5,
+			"min alpha": 0.0
+		},
+		"merge overlap ratio": 0.5, 
+		"max cpu num": 12,	
+		"optimal barrier location selection option":{
+			"optimal total loop": 10, 
+			"optimal avoid dfl": true, 
+			"optimal iteration max": 500, 
+			"optimal find iteration limit": 100, 
+			"optimal barrier num min": null, 
+			"optimal barrier num max": null
+		}, 
+		"closed barrier optimization criteria": {
+			"volume(V)": 0.35, 
+			"pressure(P)": 0.2,
+			"distance_from_road(D)": 0.15,
+			"closed_barrier_number(N)": 0.3
+		},
+		"combined barrier optimization criteria": {
+			"volume(V)": 0.35, 
+			"pressure(P)": 0.2,
+			"distance_from_road(D)": 0.15,
+			"closed_barrier_number(NC)": 0.2,
+			"opened_barrier_number(NO)": 0.1
+		}, 
+		"open barrier performance": {
+			"speed_ratio(SR)": 0.6,
+			"trap_ratio(TR)": 0.6
+		}, 
+		"critical vulnerability index (VI)": 0.4, 
+		"reinforced concrete (RC) wall": true, 
+		"static plot option": {
+			"plot map 2D": true,
+			"plot map 3D": true,
+			"plot 3D z offset": 0.1
+		},
+		"animation option": {
+			"plot animation 2D": true, 
+			"plot animation 3D": true, 
+			"plot animation 2D boundary": false,
+			"frame duration": 10,
+			"frame transition": 2,
+			"contour elevation interval": 2,
+			"animation 3D z offset": 0.1
+		},
+		"max parameter legend": {
+			"cluster max velocity(u)": 15,
+			"cluster max depth(h)": 3,
+			"cluster max volume(V)": 1000,
+			"cluster max distance_from_road(D)": 100,  
+			"cluster max pressure(P)": 500, 
+			"particle max velocity(u)": 15, 
+			"particle max depth(h)": 3, 
+			"particle max volume(V)": 5, 
+			"particle max pressure(P)": 500 
+		},
+		"marker size": 4,
+		"line width": 2,
+		"layout width": 1000,
+		"layout height": 1000,
+		"csv output": true, 
+		"output optimal step": false, 
+		"open plot": true,
+		"decimal points": 4,
+		"SPEC_debris analysis cluster data": null
+	}
+	]
+}
