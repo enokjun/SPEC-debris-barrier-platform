@@ -2,7 +2,7 @@
 
 # SPEC-debris-barrier script
 
-use the python file (SPEC_debris_barrier_platform_v8_10.py) to run:
+use the python file (SPEC_debris_barrier_platform_v8_12.py) to run:
 
 1) SPEC-debris model
 	
@@ -10,21 +10,35 @@ use the python file (SPEC_debris_barrier_platform_v8_10.py) to run:
 		
 3) closed and open-type barrier performance evaluation
 
-to request a software GUI version (refer to SPEC_debris_barrier_platform_GUI.png) and/or user manual (written in Ph.D. Thesis by Enok Cheon),
-please send a request through e-mail:
+please send a request through e-mail for any further questions:
 	
 	enokjun@gmail.com
 	
 	enokjun@kaist.ac.kr
 
-Please note that sometimes a mistake is found afterward in SPEC_debris_barrier_platform_v8_10.py;
-therefore, try using the version in GitHub instead of the version installed in GUI if there are numerical or computational errors.
+Please note that sometimes a mistake is found afterward in SPEC_debris_barrier_platform_v8_12.py;
+Therefore, try using the version in GitHub instead of the version installed in GUI if there are numerical or computational errors.
 
-# Installation Setup
+# GUI Installation Instructions (Windows)
 
-1) The user must install have installed Python3 on the computer. Head to the website (https://www.python.org/) and install the latest Python 3.9 version
+1) Download the GUI version of the SPEC-debris-barrier platform, which is contained in the "SPEC-debris-barrier-platfrom-GUI-windows" folder
 
-2) The user must contain the following Python libraries; please install these libraries using the pip module:
+2) Open the "Instructions and Guide for SPEC-debris-barrier Platform GUI.pdf" in the folder "SPEC-debris-barrier-platfrom-GUI-windows/help/" and follow the instructions
+
+# Testing the SPEC-debris-barrier-platform GUI (Windows)
+
+To run the sample cases provided in the Github, please follow these instructions after installation is completed
+
+1) Download all the sample cases "sample_case" and "sample_case_barrier" in the GitHub into the computer
+
+2) Run the "SPEC_debris_barrier_GUI.exe" and follow the instructions of "Instructions for Running Analyses" written in the "Instructions and Guide for SPEC-debris-barrier Platform GUI.pdf"
+
+3) Open one of the sample cases ("sample_case" and "sample_case_barrier") to run
+
+
+# Python Code Installation Instructions
+
+1) The user must have installed Python (3.9 or 3.10) contain the following Python libraries; please install these libraries using the pip module:
 	
 numpy, pandas, laspy, scipy, pykrige, plotly, shapely, matplotlib, alphashape, trimesh, scikit-learn, python-fcl, tripy
 
@@ -46,42 +60,47 @@ For Linux terminal:
  
 	pip3 install numpy pandas laspy scipy pykrige plotly shapely matplotlib alphashape trimesh scikit-learn python-fcl tripy
 
-4) The following 3rd party software are not required but would be helpful:
+2) The following 3rd party software are not required but would be helpful:
 	
 	program code editor (e.g. VS code) with Python extension installed
 	
 	internet browser (chrome or edge)
 
-# Testing to check whether correctly installed
+# Testing to check whether Python Code Runs Correctly
 
 To run the sample case provided in the Github, please follow these instructions after installation is completed
 
-1) Download all the codes in the GitHub into the computer
+1) Download all the sample cases "sample_case" and "sample_case_barrier" in the GitHub into the computer
 
 2) Open the 'sample_input_JSON.json' on the program code editor (e.g. VS code) 
 
 3) On the 'sample_input_JSON.json' files, go to line 5 with the heading "folder path" and replace the '...' to the full folder path location where the 'sample_case' folder is located, respectively. The name of the folder path should always be between double quotation marks ("  ")
 
-4) Run the 'SPEC_debris_barrier_platform_v8_11.py' to start both simulations. Use one of these methods:
+4) Run the 'SPEC_debris_barrier_platform_v8_12.py' located in the folder "SPEC-debris-barrier-platfrom-GUI-windows/bin/" to start both simulations. Use one of these methods:
 
-1st method - VS code or IDE
-
-a) open the 'SPEC_debris_barrier_platform_v8_11.py' file in the VS code or IDE
-
-b) run python code
-
-2nd method - terminal/cmd
+Terminal/Cmd
 
 a) open command prompt or terminal
 
-b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_11.py' file is located
+b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_12.py' file is located
 
 c) type the following code and press enter key:
 
-	python SPEC_debris_barrier_platform_v8_11.py
+	python SPEC_debris_barrier_platform_v8_12.py
 
-5) All the simulation files are stored in the folder specified in Step 3, and the results will automatically open on the browsers
+OSGeo4W - (download and install from https://trac.osgeo.org/osgeo4w/; then install all the required Python libraries with pip)
 
+a) open OSGeo4W shell located in Start Menu or Desktop 
+
+b) move the current folder to the folder where the 'SPEC_debris_barrier_platform_v8_12.py' file is located
+
+c) type the following code and press enter key:
+
+	python3 SPEC_debris_barrier_platform_v8_12.py <add folder path to where sample case folders>/sample_case/sample_input_JSON.json
+ 
+	python3 SPEC_debris_barrier_platform_v8_12.py <add folder path to where sample case folders>/sample_case_barrier/sample_input_wall_JSON.json
+
+5) All the simulation files are stored in the folders containing the JSON inputs, and the results will automatically open on the browsers
 
 # Reference and Guide
 
