@@ -1,8 +1,8 @@
 @echo off
 rem Install the Python 3.10 version to the computer
-if exist ./bin/python-3.10.11-amd64.exe (
+if exist "./bin/python-3.10.11-amd64.exe" (
     rem file exists so run the installation file
-	call ./bin/python-3.10.11-amd64.exe
+	call "./bin/python-3.10.11-amd64.exe"
 ) else (
     rem file doesn't exist - download from the internet and setup
     start "" https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
