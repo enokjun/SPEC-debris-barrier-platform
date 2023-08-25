@@ -1,8 +1,18 @@
 @echo off
 rem Install the Python 3.10 version to the computer
-call "./bin/python-3.10.11-amd64.exe"
+if exist ./bin/python-3.10.11-amd64.exe (
+    rem file exists so run the installation file
+	call ./bin/python-3.10.11-amd64.exe
+) else (
+    rem file doesn't exist - download from the internet and setup
+    start "" https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+)
 
-rem installing necessary python libraries to run SPEC-debris-barrier
+echo After finished installing python 3.10.11 into the computer
+pause
+
+echo installing necessary python libraries to run SPEC-debris-barrier
+
 python -m pip install pip --upgrade
 python -m pip install numpy
 python -m pip install pandas
