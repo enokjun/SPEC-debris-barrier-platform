@@ -36,7 +36,9 @@ Therefore, try using the version in GitHub instead of the version installed in G
    
    		cd <filepath of the folder containing the "SPEC-debris-barrier" folder>/SPEC-debris-barrier
 
-   	(c) copy and type the following command to start the installation process. For Linux: 
+   	(c) copy and type the following command to start the installation process.
+
+   	For Linux: 
 		
       		sh Python Install and Setup - linux.sh
 
@@ -51,6 +53,8 @@ Therefore, try using the version in GitHub instead of the version installed in G
 The buttons in the GUI perform the following functions:
 
 ![SPEC_debris_barrier_platform_GUI](https://github.com/enokjun/SPEC-debris-barrier-platform/assets/11845689/93f19f12-ef8d-4ccb-956e-3321979b15f5)
+
+In Linux and Mac, the terminal will run instead of the command prompt (cmd)
 
 # Test case the SPEC-debris-barrier-platform GUI
 
@@ -76,19 +80,23 @@ To run the sample cases provided in the Github, please follow these instructions
    		cd <filepath of the folder containing the "SPEC-debris-barrier" folder>/SPEC-debris-barrier
 
 3) copy and type the following command to start the GUI (above for Linux and bottom for Mac) and wait for the GUI to open:
+
+   For Linux: 
  
       		sh SPEC_debris_barrier_GUI_linux.sh
 
+   For Mac: 
+
       		sh SPEC_debris_barrier_GUI_mac.sh
 
-4) press the "Open" button on the GUI. Navigate and open the "sample_input_JSON.json" in "sample_case" folder or "sample_input_wall_JSON.json" in "sample_case_barrier" folder
+5) press the "Open" button on the GUI. Navigate and open the "sample_input_JSON.json" in "sample_case" folder or "sample_input_wall_JSON.json" in "sample_case_barrier" folder
 
-5) Press the "Check" button to see if any error is found in the input JSON files
+6) Press the "Check" button to see if any error is found in the input JSON files
 
-6) If no error is found, a message window will ask whether to start the analysis. If the "Yes" button is selected, the simulation begins.
+7) If no error is found, a message window will ask whether to start the analysis. If the "Yes" button is selected, the simulation begins.
    If the "No" button is pressed, the simulation does not proceed. The user can manually start the simulation by clicking the "Run" button.
    
-7) All the simulation files are stored in the folders containing the JSON inputs, and the results will automatically open on the browsers
+8) All the simulation files are stored in the folders containing the JSON inputs, and the results will automatically open on the browsers
 
 # Reference and Guide
 
