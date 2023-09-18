@@ -1,4 +1,4 @@
-![SPEC_debris_barrier_platform_GUI](https://github.com/enokjun/SPEC-debris-barrier-platform/assets/11845689/93f19f12-ef8d-4ccb-956e-3321979b15f5)# SPEC-debris-barrier-platform
+# SPEC-debris-barrier-platform
 
 # SPEC-debris-barrier script
 
@@ -50,7 +50,7 @@ Therefore, try using the version in GitHub instead of the version installed in G
 
 The buttons in the GUI perform the following functions:
 
-![alt text]([http://url/to/img.png](https://github.com/enokjun/SPEC-debris-barrier-platform/blob/main/SPEC-debris-barrier/help/SPEC_debris_barrier_platform_GUI.png))
+![SPEC_debris_barrier_platform_GUI](https://github.com/enokjun/SPEC-debris-barrier-platform/assets/11845689/93f19f12-ef8d-4ccb-956e-3321979b15f5)
 
 # Test case the SPEC-debris-barrier-platform GUI
 
