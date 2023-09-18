@@ -28,11 +28,11 @@ Therefore, try using the version in GitHub instead of the version installed in G
 
 2) Start the automatic installation process.
    
-   (Windows) double-click the "Python Install and Setup - windows.bat" file and follow the instructions.
+   (Windows) double-click the "Python_Install_and_Setup_Windows.bat" file in the "SPEC-debris-barrier" folder and follow the instructions.
 
    (Linux or Mac) follow these steps:
    	(a) open the terminal
-   	(b) navigate to your terminal into "SPEC-debris-barrier" folder by typing the following command:
+   	(b) navigate to your terminal into the "SPEC-debris-barrier" folder by typing the following command:
    
    		cd <filepath of the folder containing the "SPEC-debris-barrier" folder>/SPEC-debris-barrier
 
@@ -40,13 +40,13 @@ Therefore, try using the version in GitHub instead of the version installed in G
 
    	For Linux:
 	```
-	sh Python Install and Setup - linux.sh
+	sh Python_Install_and_Setup_Linux.sh
 	```
 
 	For Mac: 
 
 	```
-	sh Python Install and Setup - Mac.sh
+	sh Python_Install_and_Setup_Mac.sh
 	```
 
    NOTE: if Python3 is not already installed on the PC, the installation process will prompt the user to download and install the Python3 installation file. Please refer to the "Instructions and Guide for SPEC-debris-barrier Platform GUI.pdf" located in the "SPEC-debris-barrier/help/" folder when installing Python3
@@ -87,12 +87,12 @@ To run the sample cases provided in the Github, please follow these instructions
 
     For Linux:
     ```
-    sh Python Install and Setup - linux.sh
+    sh SPEC_debris_barrier_GUI_linux.sh
     ```
 
     For Mac: 
     ```
-    sh Python Install and Setup - Mac.sh
+    sh SPEC_debris_barrier_GUI_mac.sh
     ```
 
 5) press the "Open" button on the GUI. Navigate and open the "sample_input_JSON.json" in "sample_case" folder or "sample_input_wall_JSON.json" in "sample_case_barrier" folder
