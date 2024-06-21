@@ -16,19 +16,19 @@ pause
 echo Now installing the necessary Python libraries to run SPEC-debris-barrier...
 
 python -m pip install pip --upgrade
-python -m pip install numpy
-python -m pip install pandas
-python -m pip install scipy
-python -m pip install plotly
-python -m pip install matplotlib
-python -m pip install shapely
-python -m pip install laspy
-python -m pip install pykrige
-python -m pip install alphashape
-python -m pip install trimesh
-python -m pip install scikit-learn
-python -m pip install python-fcl
-python -m pip install tripy
+python -m pip install numpy==1.26.4
+python -m pip install pandas==2.2.2
+python -m pip install scipy==1.13.0
+python -m pip install plotly==5.22.0
+python -m pip install matplotlib==3.9.0
+python -m pip install shapely==2.0.4
+python -m pip install laspy==2.5.3
+python -m pip install pykrige==1.7.1
+python -m pip install alphashape==1.3.1
+python -m pip install trimesh==4.4.0
+python -m pip install scikit-learn==1.4.2
+python -m pip install python-fcl==0.7.0.6
+python -m pip install tripy==1.0.0
 
 echo All necessary Python libraries for SPEC-debris-barrier installed!
 
